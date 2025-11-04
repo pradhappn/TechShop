@@ -77,7 +77,7 @@ export function Footer() {
         <Separator className="mb-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p data-testid="text-copyright">© 2024 TechShop. All rights reserved.</p>
+          <p data-testid="text-copyright">© 2025 TechShop @Pradhap. All rights reserved.</p>
           <div className="flex gap-4">
             <span data-testid="text-secure-payment">🔒 Secure Payment</span>
             <span data-testid="text-free-shipping">🚚 Free Shipping</span>
