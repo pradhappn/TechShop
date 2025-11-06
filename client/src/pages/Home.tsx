@@ -7,30 +7,24 @@ import { CartDrawer, type CartItem } from "@/components/CartDrawer";
 import { useState } from "react";
 import { useLocation } from "wouter";
 
-import headphonesImg from "@assets/generated_images/Premium_wireless_headphones_c677d7eb.png";
-import smartwatchImg from "@assets/generated_images/Luxury_smartwatch_41202d1b.png";
-import speakerImg from "@assets/generated_images/Portable_bluetooth_speaker_b765af48.png";
-import laptopImg from "@assets/generated_images/Ultra-thin_laptop_9ed9a8d3.png";
-import cameraImg from "@assets/generated_images/Professional_mirrorless_camera_d165b720.png";
-import keyboardImg from "@assets/generated_images/RGB_mechanical_keyboard_77ee680d.png";
-import audioBanner from "@assets/generated_images/Audio_category_banner_945bea94.png";
-import heroBanner from "@assets/generated_images/E-commerce_hero_banner_d02a0a83.png";
+
+
 
 //todo: remove mock functionality
 const mockProducts: Product[] = [
-  { id: "1", name: "Premium Wireless Headphones", price: 299.99, image: headphonesImg, rating: 4.8, isNew: true },
-  { id: "2", name: "Luxury Smartwatch", price: 449.99, image: smartwatchImg, rating: 4.6 },
-  { id: "3", name: "Portable Bluetooth Speaker", price: 129.99, image: speakerImg, rating: 4.7, onSale: true },
-  { id: "4", name: "Ultra-thin Laptop", price: 1299.99, image: laptopImg, rating: 4.9 },
-  { id: "5", name: "Professional Mirrorless Camera", price: 1899.99, image: cameraImg, rating: 4.9, isNew: true },
-  { id: "6", name: "RGB Mechanical Keyboard", price: 189.99, image: keyboardImg, rating: 4.5 },
+  { id: "1", name: "Premium Wireless Headphones", price: 299.99, image: '/generated_images/Premium_wireless_headphones_c677d7eb.png', rating: 4.8, isNew: true },
+  { id: "2", name: "Luxury Smartwatch", price: 449.99, image: '/generated_images/Luxury_smartwatch_41202d1b.png', rating: 4.6 },
+  { id: "3", name: "Portable Bluetooth Speaker", price: 129.99, image: '/generated_images/Portable_bluetooth_speaker_b765af48.png', rating: 4.7, onSale: true },
+  { id: "4", name: "Ultra-thin Laptop", price: 1299.99, image: '/generated_images/Ultra-thin_laptop_9ed9a8d3.png', rating: 4.9 },
+  { id: "5", name: "Professional Mirrorless Camera", price: 1899.99, image: '/generated_images/Professional_mirrorless_camera_d165b720.png', rating: 4.9, isNew: true },
+  { id: "6", name: "RGB Mechanical Keyboard", price: 189.99, image: '/generated_images/RGB_mechanical_keyboard_77ee680d.png', rating: 4.5 },
 ];
 
 //todo: remove mock functionality
 const mockCategories = [
-  { id: "1", name: "Audio", image: audioBanner, productCount: 45 },
-  { id: "2", name: "Computers", image: heroBanner, productCount: 32 },
-  { id: "3", name: "Accessories", image: audioBanner, productCount: 78 },
+  { id: "1", name: "Audio", image: '/generated_images/Audio_category_banner_945bea94.png', productCount: 45 },
+  { id: "2", name: "Computers", image: '/generated_images/E-commerce_hero_banner_d02a0a83.png', productCount: 32 },
+  { id: "3", name: "Accessories", image: '/generated_images/Audio_category_banner_945bea94.png', productCount: 78 },
 ];
 
 export default function Home() {
