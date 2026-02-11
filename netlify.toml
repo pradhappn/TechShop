@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && ls -R dist/public"
   publish = "dist/public"
 
 [[redirects]]
